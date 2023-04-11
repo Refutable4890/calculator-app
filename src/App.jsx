@@ -14,8 +14,11 @@ export default function App () {
 
   return <>
     <main className={`theme-${themes[themeIndex]} w-fit p-[25px] bg-[--main-background-color] font-["League_Spartan",sans-serif] font-bold`}>
-      <h1 className='mb-[25px] text-[--logo-screen-toggle-name-text-color] text-3xl'>calc</h1>
-      <ThemeSwitcher themes={themes} setThemeIndex={setThemeIndex} />
+      <header className='mb-[25px] flex items-center justify-between'>
+        <h1 className='text-[--logo-screen-toggle-name-text-color] text-3xl'>calc</h1>
+        <ThemeSwitcher themes={themes} themeIndex={themeIndex} setThemeIndex={setThemeIndex} />
+      </header>
+
       <Display display={display} />
       <Keyboard className='mt-[25px]' setDisplay={setDisplay} display={display} />
     </main>
