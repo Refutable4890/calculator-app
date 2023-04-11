@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 // Import components
@@ -10,7 +10,15 @@ const themes = ['one', 'two', 'three']
 
 export default function App () {
   const [display, setDisplay] = useState('0')
-  const [themeIndex, setThemeIndex] = useState(0)
+  const [themeIndex, setThemeIndex] = useState(() => {
+    const themeIndex = JSON.parse(localStorage.getItem('themeIndex'))
+    return themeIndex ? themeIndex : '0'
+  })
+
+  useEffect(() => {
+    console.log('effect starts')
+    localStorage.setItem('themeIndex', JSON.stringify(themeIndex))
+  }, [themeIndex])
 
   return <>
     <div className={`theme-${themes[themeIndex]} min-h-screen flex items-center justify-center bg-[--main-background-color]`}>
