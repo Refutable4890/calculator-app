@@ -13,14 +13,16 @@ export default function App () {
   const [themeIndex, setThemeIndex] = useState(0)
 
   return <>
-    <main className={`theme-${themes[themeIndex]} w-fit p-[25px] bg-[--main-background-color] font-["League_Spartan",sans-serif] font-bold`}>
-      <header className='mb-[25px] flex items-center justify-between'>
-        <h1 className='text-[--logo-screen-toggle-name-text-color] text-3xl'>calc</h1>
-        <ThemeSwitcher themes={themes} themeIndex={themeIndex} setThemeIndex={setThemeIndex} />
-      </header>
+    <div className={`theme-${themes[themeIndex]} min-h-screen flex items-center justify-center bg-[--main-background-color]`}>
+      <main className={`w-fit p-[25px] font-["League_Spartan",sans-serif] font-bold`}>
+        <header className='mb-[25px] flex items-center justify-between'>
+          <h1 className='text-[--logo-screen-toggle-name-text-color] text-3xl'>calc</h1>
+          <ThemeSwitcher themes={themes} themeIndex={themeIndex} setThemeIndex={setThemeIndex} />
+        </header>
 
-      <Screen display={display} />
-      <Keypad className='mt-[25px]' setDisplay={setDisplay} display={display} />
-    </main>
+        <Screen display={display} />
+        <Keypad className='mt-[25px]' setDisplay={setDisplay} display={display} />
+      </main>
+    </div>
   </>
 }

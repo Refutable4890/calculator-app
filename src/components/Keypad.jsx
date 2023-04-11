@@ -87,7 +87,7 @@ export default function Keypad ({ className, display, setDisplay }) {
 
 
   return <>
-    <section className={`${className} w-fit p-[25px] rounded-[10px] grid grid-rows-[repeat(5,60px)] grid-cols-[repeat(4,60px)] gap-[15px] bg-[--keypad-background-color] text-3xl`}>
+    <section className={`${className} w-fit p-[25px] rounded-[10px] grid grid-rows-[repeat(5,60px)] grid-cols-[repeat(4,60px)] gap-[15px] bg-[--keypad-background-color] text-3xl md:grid-cols-[repeat(4,100px)]`}>
       <Button className='rounded-[5px] shadow-[0_5px] shadow-[--key-shadow-color--type-3] bg-[--key-background-color--type-3] text-[--key-text-color--type-2] active:[filter:brightness(110%)] active:[transform:scaleY(.95)_translateY(2.5%)]' character='7' handleClick={handleBtnClick} />
       <Button className='rounded-[5px] shadow-[0_5px] shadow-[--key-shadow-color--type-3] bg-[--key-background-color--type-3] text-[--key-text-color--type-2] active:[filter:brightness(110%)] active:[transform:scaleY(.95)_translateY(2.5%)]' character='8' handleClick={handleBtnClick} />
       <Button className='rounded-[5px] shadow-[0_5px] shadow-[--key-shadow-color--type-3] bg-[--key-background-color--type-3] text-[--key-text-color--type-2] active:[filter:brightness(110%)] active:[transform:scaleY(.95)_translateY(2.5%)]' character='9' handleClick={handleBtnClick} />
