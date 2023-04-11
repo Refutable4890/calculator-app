@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-one {
+  --main-background-color: hsl(222, 26%, 31%);
+  --toggle-background-color: hsl(223, 31%, 20%);
+  --keypad-background-color: hsl(223, 31%, 20%);
+  --screen-background-color: hsl(224, 36%, 15%);
+  --key-background-color--type-1: hsl(225, 21%, 49%);
+  --key-shadow-color--type-1: hsl(224, 28%, 35%);
+  --key-text-color--type-2: hsl(221, 14%, 31%);
+  --key-background-color--type-2: hsl(6, 63%, 50%);
+  --toggle-color: hsl(6, 63%, 50%);
+  --key-shadow-color--type-2: hsl(6, 70%, 34%);
+  --key-text-color--type-3: white;
+  --key-background-color--type-3: hsl(30, 25%, 89%);
+  --key-shadow-color--type-3: hsl(28, 16%, 65%);
+  --logo-screen-toggle-name-text-color: white;
+}
+
+.theme-two {
+  --main-background-color: hsl(0, 0%, 90%);
+  --toggle-background-color: hsl(0, 5%, 81%);
+  --keypad-background-color: hsl(0, 5%, 81%);
+  --screen-background-color: hsl(0, 0%, 93%);
+  --key-background-color--type-1: hsl(185, 42%, 37%);
+  --key-shadow-color--type-1: hsl(185, 58%, 25%);
+  --key-text-color--type-2: hsl(221, 14%, 31%);
+  --key-background-color--type-2: hsl(25, 98%, 40%);
+  --toggle-color: hsl(25, 98%, 40%);
+  --key-shadow-color--type-2: hsl(25, 99%, 27%);
+  --key-text-color--type-3: white;
+  --key-background-color--type-3: hsl(45, 7%, 89%);
+  --key-shadow-color--type-3: hsl(35, 11%, 61%);
+  --logo-screen-toggle-name-text-color: hsl(221, 14%, 31%);
+}
+
+.theme-three {
+  --main-background-color: hsl(268, 75%, 9%);
+  --toggle-background-color: hsl(268, 71%, 12%);
+  --keypad-background-color: hsl(268, 71%, 12%);
+  --screen-background-color: hsl(268, 71%, 12%);
+  --key-background-color--type-1: hsl(281, 89%, 26%);
+  --key-shadow-color--type-1: hsl(285, 91%, 52%);
+  --key-text-color--type-2: hsl(52, 100%, 62%);
+  --key-background-color--type-2: hsl(176, 100%, 44%);
+  --toggle-color: hsl(176, 100%, 44%);
+  --key-shadow-color--type-2: hsl(177, 92%, 70%);
+  --key-text-color--type-3: hsl(198, 20%, 13%);
+  --key-background-color--type-3: hsl(268, 47%, 21%);
+  --key-shadow-color--type-3: hsl(290, 70%, 36%);
+  --logo-screen-toggle-name-text-color: hsl(52, 100%, 62%);
+}
