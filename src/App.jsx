@@ -3,7 +3,7 @@ import './App.css'
 
 // Import components
 import Screen from './components/Screen'
-import Keyboard from './components/Keyboard'
+import Keypad from './components/Keypad'
 import ThemeSwitcher from './components/ThemeSwitcher'
 
 const themes = ['one', 'two', 'three']
@@ -20,7 +20,7 @@ export default function App () {
       </header>
 
       <Screen display={display} />
-      <Keyboard className='mt-[25px]' setDisplay={setDisplay} display={display} />
+      <Keypad className='mt-[25px]' setDisplay={setDisplay} display={display} />
     </main>
   </>
 }

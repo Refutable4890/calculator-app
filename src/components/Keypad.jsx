@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Button from "./Button"
 
-export default function Keyboard ({ className, display, setDisplay }) {
+export default function Keypad ({ className, display, setDisplay }) {
   const [operand, setOperand] = useState(null)
   const [operator, setOperator] = useState(null)
   const [hasJustClickedOperator, setHasJustClickedOperator] = useState(false)
