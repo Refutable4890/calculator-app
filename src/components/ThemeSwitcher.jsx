@@ -9,7 +9,7 @@ export default function ThemeSwitcher ({ themes, themeIndex, setThemeIndex }) {
   for (let i = 0; i < themes.length; i++) {
     const roundRule = i === 0 ? 'rounded-l-full' : i === themes.length - 1 ? 'rounded-r-full' : ''
     themeRadioEl.push(
-      <div className="inline-block text-center">
+      <div key={i} className="inline-block text-center">
         <h3>{i + 1}</h3>
         <label>
           <input className="hidden peer" type='radio' name='themeIndex' value={i.toString()} checked={themeIndex.toString() === i.toString()} onChange={handleRadioChange} />
