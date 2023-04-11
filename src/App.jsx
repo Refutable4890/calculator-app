@@ -3,7 +3,7 @@ import './App.css'
 
 // Import components
 import Screen from './components/Screen'
-import Keyboard from './components/Keyborad'
+import Keyboard from './components/Keyboard'
 import ThemeSwitcher from './components/ThemeSwitcher'
 
 const themes = ['one', 'two', 'three']
