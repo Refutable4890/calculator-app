@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 // Import components
-import Display from './components/Display'
+import Screen from './components/Screen'
 import Keyboard from './components/Keyborad'
 import ThemeSwitcher from './components/ThemeSwitcher'
 
@@ -19,7 +19,7 @@ export default function App () {
         <ThemeSwitcher themes={themes} themeIndex={themeIndex} setThemeIndex={setThemeIndex} />
       </header>
 
-      <Display display={display} />
+      <Screen display={display} />
       <Keyboard className='mt-[25px]' setDisplay={setDisplay} display={display} />
     </main>
   </>
