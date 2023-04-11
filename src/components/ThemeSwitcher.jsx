@@ -11,7 +11,7 @@ export default function ThemeSwitcher ({ themes, themeIndex, setThemeIndex }) {
     themeRadioEl.push(
       <div key={i} className="inline-block text-center">
         <h3>{i + 1}</h3>
-        <label>
+        <label className="hover:cursor-pointer">
           <input className="hidden peer" type='radio' name='themeIndex' value={i.toString()} checked={themeIndex.toString() === i.toString()} onChange={handleRadioChange} />
           <div className={`${roundRule} p-[0.25em] bg-[--toggle-background-color] peer-checked:hidden`}>
             <div className="w-[1em] h-[1em] rounded-full bg-transparent"></div>
